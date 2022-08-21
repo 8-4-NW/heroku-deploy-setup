@@ -4,6 +4,7 @@
 - `touch prod_schema.sql prod_seed.sql`
 - copy the SQL code from your `schema.sql` and `seed.sql` file over to `prod_schema.sql` and `prod_seed.sql` respectively
 - delete any `/c <whatever-your-database-is>` - heroku will provide us with a DB and our project cannot create or connect to a different DB;
+- also remove any `DROP DATABASE IF EXISTS` or `CREATE DATABASE` commands - Heroku gives us a DB and we don't get to control what that is called
 #### Set up Heroku
 - `heroku create`
 - `git add .`
