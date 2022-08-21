@@ -1,9 +1,10 @@
 # Deployment to Neylify and Heroku
-#### Create PRod schema and seed files
+#### Create Prod schema and seed files
 - navigate to your db directory
 - `touch prod_schema.sql prod_seed.sql`
 - copy the SQL code from your `schema.sql` and `seed.sql` file over to `prod_schema.sql` and `prod_seed.sql` respectively
 - delete any `/c <whatever-your-database-is>` - heroku will provide us with a DB and our project cannot create or connect to a different DB;
+#### Set up Heroku
 - `heroku create`
 - `git add .`
 - `git commit -m 'heroku deployment`
